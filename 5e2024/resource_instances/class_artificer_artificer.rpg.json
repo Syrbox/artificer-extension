@@ -6,7 +6,28 @@
       "value": "Artificer"
     },
     "source": {
-      "value": "efota"
+      "value": "efo"
+    },
+    "hit_die": {
+      "value": "d8"
+    },
+    "hp_modifiers": {
+      "value": ["constitution"]
+    },
+    "same_hp_as_parent": {
+      "value": false
+    },
+    "ac_modifiers": {
+      "value": ["dexterity"]
+    },
+    "same_ac_as_parent": {
+      "value": false
+    },
+    "constitution_saving_throw_proficiency": {
+      "value": true
+    },
+    "intelligence_saving_throw_proficiency": {
+      "value": true
     },
     "descriptions": {
       "value": [
@@ -422,7 +443,185 @@
             },
             "id": "epic-boon"
           }
+        }
+      ]
+    },
+    "weapon": {
+      "value": []
+    },
+    "attacks_per_action_per_level": {
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_amount",
+          "stats": {
+            "amount": {
+              "value": 1
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-attacks-1"
+          }
+        }
+      ]
+    },
+    "language_proficiencies": {
+      "value": []
+    },
+    "skill_proficiencies": {
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_skill_proficiency",
+          "stats": {
+            "options": {
+              "value": [
+                "arcana",
+                "history",
+                "investigation",
+                "medicine",
+                "nature",
+                "perception",
+                "sleight_of_hand"
+              ]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-skill-1"
+          }
         },
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_skill_proficiency",
+          "stats": {
+            "options": {
+              "value": [
+                "arcana",
+                "history",
+                "investigation",
+                "medicine",
+                "nature",
+                "perception",
+                "sleight_of_hand"
+              ]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-skill-2"
+          }
+        }
+      ]
+    },
+    "account_for_skill_proficiencies_on_multiclass": {
+      "value": false
+    },
+    "armor_proficiencies": {
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_armor_proficiency",
+          "stats": {
+            "options": {
+              "value": ["light"]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-armor-light"
+          }
+        },
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_armor_proficiency",
+          "stats": {
+            "options": {
+              "value": ["medium"]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-armor-medium"
+          }
+        },
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_armor_proficiency",
+          "stats": {
+            "options": {
+              "value": ["shield"]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-armor-shield"
+          }
+        }
+      ]
+    },
+    "weapon_proficiencies": {
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_weapon_proficiency",
+          "stats": {
+            "options": {
+              "value": ["all_simple"]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-weapon-simple"
+          }
+        }
+      ]
+    },
+    "tool_proficiencies": {
+      "value": [
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_tool_proficiency",
+          "stats": {
+            "options": {
+              "value": ["thieves_tools"]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-tool-thieves"
+          }
+        },
+        {
+          "system": "5e2024",
+          "resource_id": "levelled_tool_proficiency",
+          "stats": {
+            "options": {
+              "value": ["tinkers_tools"]
+            },
+            "updated_at": {
+              "value": "2026-02-27T00:00:00.000000"
+            },
+            "id": "artificer-tool-tinkers"
+          }
+        }
+      ]
+    },
+    "account_for_tool_proficiencies_on_multiclass": {
+      "value": false
+    },
+    "selectable_equipments": {
+      "value": []
+    },
+    "selectable_armors": {
+      "value": []
+    },
+    "selectable_weapons": {
+      "value": []
+    },
+    "archetypes": {
+      "value": [
         {
           "system": "5e2024",
           "resource_id": "class",
@@ -431,10 +630,10 @@
               "value": "Alchemist"
             },
             "source": {
-              "value": "efota"
+              "value": "phb"
             },
             "archetype_selection_level": {
-              "value": 3
+              "value": 1
             },
             "descriptions": {
               "value": [
@@ -669,10 +868,10 @@
               "value": "Armorer"
             },
             "source": {
-              "value": "efota"
+              "value": "phb"
             },
             "archetype_selection_level": {
-              "value": 3
+              "value": 1
             },
             "descriptions": {
               "value": [
@@ -940,10 +1139,10 @@
               "value": "Artillerist"
             },
             "source": {
-              "value": "efota"
+              "value": "phb"
             },
             "archetype_selection_level": {
-              "value": 3
+              "value": 1
             },
             "descriptions": {
               "value": [
@@ -1178,10 +1377,10 @@
               "value": "Battle Smith"
             },
             "source": {
-              "value": "efota"
+              "value": "phb"
             },
             "archetype_selection_level": {
-              "value": 3
+              "value": 1
             },
             "descriptions": {
               "value": [
@@ -1449,10 +1648,10 @@
               "value": "Cartographer"
             },
             "source": {
-              "value": "efota"
+              "value": "phb"
             },
             "archetype_selection_level": {
-              "value": 3
+              "value": 1
             },
             "descriptions": {
               "value": [
